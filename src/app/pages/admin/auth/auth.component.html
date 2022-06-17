@@ -1,1 +1,40 @@
-<p>auth works!</p>
+<div class="w-full">
+  <div class="bg-slate-800 p-4">
+    <div class="w-[1200px] mx-auto">
+      <div class="font-semibold text-2xl text-slate-50">
+        Table Reservation System
+        <span class="text-sm text-slate-400">auth</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="w-[1200px] mx-auto grid place-items-center h-[500px]">
+    <form
+      (ngSubmit)="onSubmit()"
+      [formGroup]="loginForm"
+      autocomplete="off"
+      class="w-[400px] mx-auto"
+    >
+      <h1 class="font-black text-2xl text-slate-800 mb-4">Login</h1>
+
+      <input
+        type="text"
+        placeholder="Username"
+        class="w-full bg-slate-100 py-3 px-3 outline-none rounded-md text-sm mb-3"
+        formControlName="username"
+      />
+      <input
+        type="password"
+        placeholder="Password"
+        class="w-full bg-slate-100 py-3 px-3 outline-none rounded-md text-sm mb-3"
+        formControlName="password"
+      />
+      <button
+        type="submit"
+        class="bg-purple-800 text-center font-semibold rounded-lg shadow-lg w-full py-3 text-slate-50 hover:bg-purple-900 mt-2"
+      >
+        Login
+      </button>
+    </form>
+  </div>
+</div>

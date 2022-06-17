@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ReservationService } from 'src/app/services/reservation.service';
 import { AuthService } from 'src/app/services/auth.service';
+import * as moment from 'moment';
 
 @Component({
   selector: 'app-dashboard',
@@ -30,6 +31,10 @@ export class DashboardComponent implements OnInit {
 
   logout() {
     this.authService.logout()
+  }
+
+  date(param: any) {
+    return moment(param).format('MMMM Do YYYY, h:mm:ss a')
   }
 
 }

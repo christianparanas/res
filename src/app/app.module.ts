@@ -10,6 +10,7 @@ import { DashboardComponent } from './pages/admin/dashboard/dashboard.component'
 import { AuthComponent } from './pages/admin/auth/auth.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,

@@ -1,24 +1,80 @@
-<div class="w-full">
-  <div class="bg-slate-800 p-4">
-    <div class="w-[1200px] mx-auto">
-      <div class="font-semibold text-2xl text-slate-50">
-        Table Reservation System
-      </div>
-    </div>
-  </div>
 
-  <div class="w-[1200px] mx-auto pb-[200px]">
-    <div class="grid grid-cols-[1fr_1fr] h-[600px] items-center">
-      <img src="../../../assets/booking.png" alt="" class="w-[300px] mx-auto" />
-      <h1 class="font-black text-slate-900 text-6xl text-left leading-20">
-        <div class="">Table</div>
-        <div class="">Reservation</div>
-        <div class="text-red-500">System</div>
-      </h1>
-    </div>
 
+<nav>
+  <ul>
+    <li><a href="#top">Home</a> &nbsp; </li>
+    <li><a href="#2">Reserve</a> &nbsp;</li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</nav>
+
+<div class="main-content">
+  <h1 id="top"></h1>
+</div>
+
+<diV class="intro">
+        <pre>Best Restuarant in town, We have Affordable and 
+Delicious Foods. A Restuarant for everybody, Come Now!
+    </pre>
+    <img  src="../../../assets/chief.png">
+</diV>
+
+<div class="food">
+  <pre>~ Our Best Serve ~</pre>
+
+  <tr>
+    <td>
+        <img src="../../../assets/adobo.jpg">
+        <h1>Pork Special Adobo</h1>
+        <h1>₱99</h1>
+    </td>
+      
+    <td>
+      <img src="../../../assets/calamares.jpg">
+      <h1>Calamares</h1>
+      <h1>₱99</h1>
+    </td>
+    <td>
+      <img src="../../../assets/bicol.jpg">
+      <h1>Bicol Express</h1>
+      <h1>₱129</h1>
+    </td>
+    <td>
+      <img src="../../../assets/liempo.jpg">
+      <h1>Pan Grilled Liempo</h1>
+      <h1>₱159</h1>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+       <img src="../../../assets/pig.jpg">
+       <h1>Crispy Cochinillo</h1>
+       <h1>₱1199</h1>
+    </td>
+    <td>
+      <img src="../../../assets/mango.jpg">
+      <h1>Mango Dessert</h1>
+      <h1>₱59</h1>
+    </td>
+    <td>
+      <img src="../../../assets/cake.jpg">
+      <h1>Black Forest Bundt Cake</h1>
+      <h1>₱49</h1>
+    </td>
+    <td>
+      <img src="../../../assets/burger.jpg">
+      <h1>Burger & Steak</h1>
+      <h1 id="2">₱79</h1>
+    </td>
+  </tr>
+</div>
+    
+<div class="Reserve-section">
+<div class="form">
     <div class="w-[500px] p-4 bg-white shadow-lg rounded-lg">
-      <h1 class="font-bold text-2xl mb-4">Reservation Form</h1>
+      <h1 class="font-bold text-2xl mb-4" >Reserve Table Now!</h1>
 
       <form
         (ngSubmit)="onSubmit()"
@@ -66,6 +122,16 @@
         </div>
 
         <div class="grid">
+          <label for="" class="font-semibold mb-1">No. of Person</label>
+          <input
+            type="text"
+            class="bg-slate-100 py-2 px-3 outline-none rounded-md text-sm mb-2"
+            placeholder="Enter Number of Person"
+            formControlName="person"
+          />
+        </div>
+
+        <div class="grid">
           <label for="" class="font-semibold mb-1">Table</label>
           <select
             name=""
@@ -90,11 +156,19 @@
 
         <button
           type="submit"
-          class="bg-purple-800 text-center font-semibold rounded-lg shadow-lg w-full py-3 text-slate-50 hover:bg-purple-900 mt-2"
+          class="bg-gray-800 text-center font-semibold rounded-lg shadow-lg w-full py-3 text-slate-50 hover:bg-purple-900 mt-2"
         >
           Submit Reservation
         </button>
       </form>
     </div>
   </div>
-</div>
+
+  <div class="table-list">
+    
+
+
+  </div>
+  </div>
+
+

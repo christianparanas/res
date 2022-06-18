@@ -1,0 +1,105 @@
+.form{
+    margin-left: 350px;
+}
+
+.logo{
+    display: flex;
+    color: rgb(241, 238, 238);
+    padding: 0 20px;
+    text-decoration: none;
+    line-height: 50px;
+}
+nav{
+    width: 100%;
+    height: 50px;
+    background: rgba(10, 2, 2, 0.897);
+    position: sticky;
+    top: 0;
+}
+
+nav ul{
+    display: flex;
+    margin: 0;
+    padding: 0 100px;
+    float: right;
+    margin-right: 70px;
+}
+
+nav ul li{
+    list-style: none;
+}
+
+nav ul li a{
+    display: block;
+    color: rgb(241, 238, 238);
+    padding: 0 20px;
+    text-decoration: none;
+    line-height: 50px;
+}
+
+.main-content{
+    width: 100%;
+    height: 70vh;
+    background-size: cover;
+    background-position: 53%;
+    background-image: url(../../../assets/OIP.jpg)
+}
+
+.intro{
+    width: 100%;
+    height: 270px;
+    background: rgba(199, 197, 197, 0.418);
+}
+
+.intro pre{
+    float: right;
+    margin-top: 60px;
+    font-size: large;
+    font-weight: bold;
+    font-style: italic;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-right: 270px;
+
+}
+
+.intro img{
+    width: 270px; 
+    height: 200px; 
+    float: left; 
+    margin-left: 270px;
+    margin-top: 40px;
+}
+
+.food{
+    margin-left: 230px;
+    margin-top: 30px;
+}
+.food pre{
+    font-size: 25px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    font-style: italic;
+    margin-left: 350px;
+}
+
+.food img{
+    margin-top: 20px;
+    width: 200px;
+    height: 200px;
+    margin-right: 37px;
+}
+
+.food h1{
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+.Reserve-section{
+   
+    height: 700px;
+    margin-top: 50px;
+}
+
+.form{
+    margin-left: 230px;
+}

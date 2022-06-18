@@ -13,7 +13,7 @@ export class HomeComponent implements OnInit {
   reservationForm: FormGroup;
   formSubmitLoading = false;
 
-  tables = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+  tables = [1, 2, 3, 4, 5, 6, 7, 8]
 
   constructor(
     private toast: HotToastService,
@@ -30,6 +30,7 @@ export class HomeComponent implements OnInit {
       contactnumber: new FormControl('', Validators.required),
       email: new FormControl('', [Validators.required, Validators.email]),
       address: new FormControl('', Validators.required),
+      person: new FormControl('', Validators.required),
       table: new FormControl('', Validators.required),
       schedule: new FormControl('', Validators.required),
     });
@@ -38,7 +39,7 @@ export class HomeComponent implements OnInit {
   onSubmit() {
     if (this.reservationForm.status == 'INVALID') {
       this.toast.warning('Please fill out the fields.', {
-        position: 'top-right',
+        position: 'top-center',
       });
       return;
     }
@@ -48,13 +49,13 @@ export class HomeComponent implements OnInit {
     );
 
     if (res == 'OK') {
-      this.toast.success('Reservation Submitted.', {
-        position: 'top-right',
+      this.toast.success('Reservation Submitted. Please Wait for a Call Confirmation', {
+        position: 'top-center',
       });
 
       this.reservationForm.reset();
     } else {
-      this.toast.error('Something went wrong.', { position: 'top-right' });
+      this.toast.error('Something went wrong.', { position: 'top-center' });
     }
   }
 }
